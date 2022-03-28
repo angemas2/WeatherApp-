@@ -25,6 +25,10 @@ li {
   text-decoration: underline;
 }
 
+a {
+  color: #7c73e6;
+}
+
 .container {
   font-family: "Nunito", sans-serif;
 }
@@ -145,8 +149,8 @@ li {
   font-weight: 600;
 }
 
-a {
-  color: #7c73e6;
+.fa-github {
+  font-size: 14px;
 }
 
 #description {
