@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Source/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+</head>
+  <script
+    src="https://kit.fontawesome.com/2b0f876cb2.js"
+    crossorigin="anonymous"
+  ></script>
+ <video src="medias/Palm tree in the wind.mp4" class="video" autoplay muted loop></video>
+<div class="container">
+ 
+  <body>
+      
+     <div class="mainCard">
+
+        <div class="row">
+
+          <div class="col-sm-4"> <h1> Weather Forecast</h1> <h2 id="current-date" >Friday, february 24th</h2></div>
+          <div class="col-sm-6">
+            <form id="search-city"><input id="city-input" type="text" placeholder="🔎  Enter your City" class="enterCity"></input>
+            <input type="submit"  value="Search" class="searchBtn"></input></form>
+          </div>
+          <div class="col-sm-2">
+              <button id="location"> 🌍 Location </button> 
+            </div> 
+
+
+        </div>
+     
+        <div class="currentCard">
+          <div class="row">
+ 
+            
+            <div class="col-4 currentCity align-self-center" > <div id="city"> Bruxelles  </div>  <div class="currentTemp"><span id="description">cloudy</span> <span id="temp-data"> 10 </span> <span class=celsius>°  <a id="celsius" href=""> C</a> | <a id="fahrenheit" href="">F</a> </span></div> </div>
+             <div class="col-4 details align-self-center"> Feels like : <span id="precipitation"> 2 </span> </br>  Humidity : <span id="humidity"> 73</span>% </br> Wind : <span id="wind"> 11 </span> k/m </div>
+               <div class="col align-self-center currentEmoji" id="current-emoji"> <img src="http://openweathermap.org/img/wn/10d@2x.png" id="img"/> </div>
+              
+               
+          </div>
+        </div>
+
+        <div class="row days">
+          <div class="col">Thursday </br> <i class="fa-solid fa-sun"></i> </br><span class="maxTemp"> 11°/ </span> <span class="minTemp">0°</span></div>
+          <div class="col">Friday </br> <i class="fa-solid fa-sun"></i></br><span class="maxTemp"> 12°/ </span> <span class="minTemp">2°</span></div>
+          <div class="col">Saturday </br><i class="fa-solid fa-cloud-sun"></i></br><span class="maxTemp"> 10°/ </span> <span class="minTemp">3°</span></div>
+          <div class="col">Thursday </br> <i class="fa-solid fa-sun"></i></br><span class="maxTemp"> 11°/ </span> <span class="minTemp">4°</span></div>
+          <div class="col">Monday </br> <i class="fa-solid fa-cloud-sun"></i></br><span class="maxTemp"> 13°/ </span> <span class="minTemp">6°</span></div>
+        </div>
+           </br><hr>
+           <ul>
+             <li>
+               Singapour
+             </li>
+              <li>
+               Paris
+             </li>
+              <li>
+              New York
+             </li>
+              <li>
+             Melbourne
+             </li>
+           </ul>
+           <div class="footer">Coded by <strong>Angélique M 😊 </strong> </div>
+    </div>
+
+<script src=js.js> </script>
+   
+  </body>
+   </div>
+</html>
